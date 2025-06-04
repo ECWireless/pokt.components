@@ -1,3 +1,36 @@
+# Pocket Network UI
+
+This is a Pocket Network themed UI component library to be used in other projects. It is built with Tailwind and shadcn.
+
+## How to use
+
+These instructions assume you are adding these components into a Next.js project. If you are using a different framework, there could be adjustments you need to do. Please follow the [official shadcn docs](https://ui.shadcn.com/docs/installation) in case of that.
+
+If you have built any project with shadcn before, the setup should be identical (or at least very similar).
+
+### Step 1: Add font and color theme
+
+Copy `src/app/globals.css` into your project. If you have an existing `globals.css` file, replace it with this one.
+
+This includes the CSS variables for Pocket Network's font and color themes.
+
+### Step 2: Add components
+There are 2 ways to add components to your project:
+1. Use the shadcn CLI to add from registry
+2. Manually copy and paste from `src/components/ui` folder
+
+#### Add components via shadcn CLI
+```
+bunx --bun shadcn@latest add http://[POKT_UI_REGISTRY_URL]/r/ui.json
+```
+
+#### Add components manually
+```
+cp src/components/ui/button.tsx path/to/project/components/ui/button.tsx
+```
+
+## Development
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
