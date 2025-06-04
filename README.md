@@ -8,26 +8,56 @@ These instructions assume you are adding these components into a Next.js project
 
 If you have built any project with shadcn before, the setup should be identical (or at least very similar).
 
-### Step 1: Add font and color theme
+There are 2 ways to add theme and components to your project:
+1. Use the shadcn CLI to add from registry
+2. Manually copy and paste from `src/app/globals.css` and `src/components/ui`
 
+The instructions below will cover both options to set up your project:
+
+### Step 1: Add shadcn
+
+Run the `init` command from shadcn to start (if it is a Next.js project):
+
+```
+bunx --bun shadcn@latest init
+```
+
+For more information on this step, please follow the [official shadcn docs](https://ui.shadcn.com/docs/installation) for installation.
+
+### Step 2: Add font and color theme
+
+#### Add CSS theme via shadcn CLI
+🚧 ***TODO: Replace `http://localhost:3000` with hosted registry URL***
+```
+bunx --bun shadcn@latest add http://localhost:3000/r/theme.json
+```
+
+This will update the CSS variables in your `globals.css` file with Pocket Network color palette and font.
+
+#### Add CSS theme manually
 Copy `src/app/globals.css` into your project. If you have an existing `globals.css` file, replace it with this one.
 
 This includes the CSS variables for Pocket Network's font and color themes.
 
-### Step 2: Add components
-There are 2 ways to add components to your project:
+### Step 3: Add components
+There are 2 ways to add theme and components to your project:
 1. Use the shadcn CLI to add from registry
 2. Manually copy and paste from `src/components/ui` folder
 
 #### Add components via shadcn CLI
+🚧 ***TODO: Replace `http://localhost:3000` with hosted registry URL***
 ```
-bunx --bun shadcn@latest add http://[POKT_UI_REGISTRY_URL]/r/ui.json
+bunx --bun shadcn@latest add http://localhost:3000/r/button.json
 ```
 
 #### Add components manually
+All components are found in `src/components/ui`. Copy and paste the files of your choosing into your project.
+
 ```
 cp src/components/ui/button.tsx path/to/project/components/ui/button.tsx
 ```
+
+Note: Some components may require npm dependencies.
 
 ## Development
 

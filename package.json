@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:registry": "shadcn build"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -16,6 +17,7 @@
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "shadcn": "^2.6.0-canary.3",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
