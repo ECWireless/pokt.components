@@ -1,6 +1,18 @@
 # Pocket Network UI
 
-This is a Pocket Network themed UI component library to be used in other projects. It is built with Tailwind and shadcn.
+This is a Pocket Network themed UI component library to be used in other projects. It is built with Typescript, Tailwind and shadcn.
+
+## Components
+
+Here are the following components already built and their URL to add to your project via shadcn CLI:
+
+| Component | Registry URL |
+|-----------|--------------|
+| Theme | `/r/theme.json` |
+| Button | `/r/button.json` |
+| Card | `/r/card.json` |
+| Logo | `/r/logo.json` |
+| PoktIcon | `/r/pokt-icon.json` |
 
 ## How to use
 
