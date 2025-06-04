@@ -6,6 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { PoktIcon } from "@/components/ui/icons/pokt-icon";
+import { Logo } from "@/components/ui/logo";
 import Image from "next/image";
 
 export default function Home() {
@@ -29,6 +31,16 @@ export default function Home() {
             <p>Card Content</p>
           </CardContent>
         </Card>
+        <div className="flex flex-col gap-4 w-full">
+          <Logo size="xs" type="icon" />
+          <Logo />
+          <Logo size="sm" />
+          <Logo size="md" />
+          <Logo size="lg" type="icon" color="default" />
+          <Logo size="xl" />
+          <Logo size="2xl" />
+          <PoktIcon className="w-24 h-24" />
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a

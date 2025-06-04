@@ -55,6 +55,32 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "logo",
+      "type": "registry:component",
+      "path": "src/components/ui/logo.tsx",
+      "files": [
+        {
+          "path": "src/components/ui/icons/pokt-icon.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/ui/logo.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pokt-icon",
+      "type": "registry:component",
+      "path": "src/components/ui/icons/pokt-icon.tsx",
+      "files": [
+        {
+          "path": "src/components/ui/icons/pokt-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
