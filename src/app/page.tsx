@@ -56,14 +56,14 @@ export default function Home() {
                   View Installation Guide
                 </a>
               </Button>
-              <p className="text-sm text-muted-foreground">Once you've initialized shadcn in your project, return here to continue with the Pocket Network UI setup.</p>
+              <p className="text-sm text-muted-foreground">Once you&apos;ve initialized shadcn in your project, return here to continue with the Pocket Network UI setup.</p>
             </CardContent>
           </Card>
 
           <Card className="mt-4">
             <CardHeader>
               <CardTitle>Step 2: Add Theme</CardTitle>
-              <CardDescription>Add Pocket Network's theme and components</CardDescription>
+              <CardDescription>Add Pocket Network&apos;s theme and components</CardDescription>
             </CardHeader>
             <CardContent>
               <Code
