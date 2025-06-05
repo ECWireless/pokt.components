@@ -57,6 +57,28 @@
       ]
     },
     {
+      "name": "code",
+      "type": "registry:component",
+      "path": "src/components/ui/code.tsx",
+      "files": [
+        {
+          "path": "src/components/ui/code.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:component",
+      "path": "src/components/ui/tabs.tsx",
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "logo",
       "type": "registry:component",
       "path": "src/components/ui/logo.tsx",

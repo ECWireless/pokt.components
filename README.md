@@ -11,14 +11,14 @@ Here are the following components already built and their URL to add to your pro
 | Theme | `/r/theme.json` |
 | Button | `/r/button.json` |
 | Card | `/r/card.json` |
+| Code | `/r/code.json` |
 | Logo | `/r/logo.json` |
 | PoktIcon | `/r/pokt-icon.json` |
+| Tabs | `/r/tabs.json` |
 
 ## How to use
 
-These instructions assume you are adding these components into a Next.js project. If you are using a different framework, there could be adjustments you need to do. Please follow the [official shadcn docs](https://ui.shadcn.com/docs/installation) in case of that.
-
-If you have built any project with shadcn before, the setup should be identical (or at least very similar).
+If you have built any project with shadcn before, the setup should be identical (or at least very similar). If not, read the [official shadcn docs](https://ui.shadcn.com/docs/installation) to learn more.
 
 There are 2 ways to add theme and components to your project:
 1. Use the shadcn CLI to add from registry
@@ -28,13 +28,7 @@ The instructions below will cover both options to set up your project:
 
 ### Step 1: Add shadcn
 
-Run the `init` command from shadcn to start (if it is a Next.js project):
-
-```
-bunx --bun shadcn@latest init
-```
-
-For more information on this step, please follow the [official shadcn docs](https://ui.shadcn.com/docs/installation) for installation.
+Follow the installation instructions from the [official shadcn documentation](https://ui.shadcn.com/docs/installation). Once you've initialized shadcn in your project, return here to continue with the Pocket Network UI setup.
 
 ### Step 2: Add font and color theme
 
