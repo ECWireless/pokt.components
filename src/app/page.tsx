@@ -10,13 +10,20 @@ import {
 } from "@/components/ui/card";
 import { Logo } from "@/components/ui/logo";
 import { Code } from "@/components/ui/code";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 type PackageManager = "npm" | "bun" | "pnpm" | "yarn";
 
 export default function Home() {
   const [command, setCommand] = useState<PackageManager>("npm");
+
+  const baseUrl = useMemo(() => {
+    if (typeof window === "undefined") {
+      return "";
+    }
+    return window.location.origin;
+  }, []);
 
   const shadcnCli = {
     npm: "npx shadcn-ui@latest",
@@ -67,7 +74,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <Code
-                code={toShadcnCliCommands("add http://localhost:3000/r/theme.json")}
+                code={toShadcnCliCommands(`add ${baseUrl}/r/theme.json`)}
                 initialKey={command}
                 onValueChange={(value) => setCommand(value as PackageManager)}
                 value={command}
@@ -87,7 +94,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Code
-                  code={toShadcnCliCommands("add http://localhost:3000/r/button.json")}
+                  code={toShadcnCliCommands(`add ${baseUrl}/r/button.json`)}
                   initialKey={command}
                   onValueChange={(value) => setCommand(value as PackageManager)}
                   value={command}
@@ -102,7 +109,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Code
-                  code={toShadcnCliCommands("add http://localhost:3000/r/card.json")}
+                  code={toShadcnCliCommands(`add ${baseUrl}/r/card.json`)}
                   initialKey={command}
                   onValueChange={(value) => setCommand(value as PackageManager)}
                   value={command}
@@ -117,7 +124,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Code
-                  code={toShadcnCliCommands("add http://localhost:3000/r/code.json")}
+                  code={toShadcnCliCommands(`add ${baseUrl}/r/code.json`)}
                   initialKey={command}
                   onValueChange={(value) => setCommand(value as PackageManager)}
                   value={command}
@@ -132,7 +139,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Code
-                  code={toShadcnCliCommands("add http://localhost:3000/r/logo.json")}
+                  code={toShadcnCliCommands(`add ${baseUrl}/r/logo.json`)}
                   initialKey={command}
                   onValueChange={(value) => setCommand(value as PackageManager)}
                   value={command}
@@ -147,7 +154,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Code
-                  code={toShadcnCliCommands("add http://localhost:3000/r/pokt-icon.json")}
+                  code={toShadcnCliCommands(`add ${baseUrl}/r/pokt-icon.json`)}
                   initialKey={command}
                   onValueChange={(value) => setCommand(value as PackageManager)}
                   value={command}
@@ -162,7 +169,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Code
-                  code={toShadcnCliCommands("add http://localhost:3000/r/tabs.json")}
+                  code={toShadcnCliCommands(`add ${baseUrl}/r/tabs.json`)}
                   initialKey={command}
                   onValueChange={(value) => setCommand(value as PackageManager)}
                   value={command}
