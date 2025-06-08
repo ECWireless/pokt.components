@@ -12,7 +12,6 @@ import { Logo } from "@/components/ui/logo";
 import { Code } from "@/components/ui/code";
 import { useMemo, useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { GithubIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
